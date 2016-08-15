@@ -1,0 +1,120 @@
+//$color: rgb(139, 217, 255);
+$color: #8BD9FF;
+$color2: darken($color, 60%);
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  animation: #{$str};      
+}
+
+@include keyframes(bigger){
+  0% {
+    width:5px;
+    height:5px;
+    top:49%;
+    left:49%;
+  }
+  100% {
+    width:600px;
+    height:600px; 
+    top:0%;
+    left:0%;
+  }
+}
+
+@include keyframes(round) {
+   0% {
+      border-top: 300px solid $color2;
+      border-bottom: 300px solid $color2;
+      border-right: 300px solid transparent;
+      border-left: 300px solid $color2;
+  }
+  25% {
+      border-top: 300px solid $color2;
+      border-bottom: 300px solid $color2;
+      border-right: 300px solid transparent;
+      border-left: 300px solid transparent;
+  }
+  50% {
+      border-top: 300px solid transparent;
+      border-bottom: 300px solid transparent;
+      border-right: 300px solid $color2;
+      border-left: 300px solid $color2;
+  }
+  75% {
+      border-top: 300px solid $color2;
+      border-bottom: 300px solid $color2;
+      border-right: 300px solid $color2;
+      border-left: 300px solid transparent;
+  }
+  100% {
+      border-top: 300px solid $color2;
+      border-bottom: 300px solid $color2;
+      border-right: 300px solid $color2;
+      border-left: 300px solid $color2;
+  }
+}
+
+body {
+  background:darken($color, 60%);
+  header {
+    padding:15px;
+    h1 {
+      font-size:2em;
+    }
+  }
+  section {
+    height:600px;
+    width:600px;
+    margin: 0 auto;
+    position: relative;
+    overflow:hidden;
+    #triangle {
+      width:0px;
+      height:0px;
+      border-top: 300px solid $color2;
+      border-bottom: 300px solid $color2;
+      border-right: 300px solid transparent;
+      border-left: 300px solid $color2;      
+      position:absolute;
+      top:0px;
+      left:0px;
+      z-index:20;
+      @include animation('round 40s linear infinite');
+    }
+    #circles {
+      height:600px;
+      width:600px;
+      position:relative;
+      border-radius:50%;
+      div {
+        margin:0px;
+        left:-1000px;
+        border-radius:50%;
+        position:absolute;
+        z-index:10;
+        @include animation('bigger linear infinite 10s');
+      }
+    }
+  }
+  footer {
+    margin-top:20px;
+    padding:15px;
+    font-size:.9em;
+  }
+}
+
+@for $i from 1 through 6 {
+  #circles div:nth-of-type(#{$i}) {
+    animation-delay:#{$i*2s};
+    border: 3px solid change-color($color, $red: $i*35, $green:$i*33, $blue: $i*34);
+  }
+}
