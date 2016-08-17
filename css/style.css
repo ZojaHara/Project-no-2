@@ -91,6 +91,8 @@
   }
 }
 body {
+  width:100vw;
+  height:100vh;
   background: #003b58;
 }
 body header {
