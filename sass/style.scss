@@ -1,6 +1,6 @@
 //$color: rgb(139, 217, 255);
 $color: #8BD9FF;
-$color2: darken($color, 60%);
+$color2: #090F21;
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
         @content;
@@ -12,7 +12,7 @@ $color2: darken($color, 60%);
 
 @mixin animation($str) {
   -webkit-animation: #{$str};
-  animation: #{$str};      
+  animation: #{$str};
 }
 
 @include keyframes(bigger){
@@ -24,7 +24,7 @@ $color2: darken($color, 60%);
   }
   100% {
     width:600px;
-    height:600px; 
+    height:600px;
     top:0%;
     left:0%;
   }
@@ -64,17 +64,11 @@ $color2: darken($color, 60%);
 }
 
 body {
-  background:darken($color, 60%);
-  header {
-    padding:15px;
-    h1 {
-      font-size:2em;
-    }
-  }
+  background:$color2;
   section {
     height:600px;
     width:600px;
-    margin: 0 auto;
+    margin: 60px auto 0;
     position: relative;
     overflow:hidden;
     #triangle {
@@ -83,7 +77,7 @@ body {
       border-top: 300px solid $color2;
       border-bottom: 300px solid $color2;
       border-right: 300px solid transparent;
-      border-left: 300px solid $color2;      
+      border-left: 300px solid $color2;
       position:absolute;
       top:0px;
       left:0px;
