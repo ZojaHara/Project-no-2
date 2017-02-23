@@ -28,70 +28,70 @@
 }
 @-webkit-keyframes round {
   0% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
     border-right: 300px solid transparent;
-    border-left: 300px solid #090F21;
+    border-left: 300px solid #003b58;
   }
   25% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
     border-right: 300px solid transparent;
     border-left: 300px solid transparent;
   }
   50% {
     border-top: 300px solid transparent;
     border-bottom: 300px solid transparent;
-    border-right: 300px solid #090F21;
-    border-left: 300px solid #090F21;
+    border-right: 300px solid #003b58;
+    border-left: 300px solid #003b58;
   }
   75% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
-    border-right: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
+    border-right: 300px solid #003b58;
     border-left: 300px solid transparent;
   }
   100% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
-    border-right: 300px solid #090F21;
-    border-left: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
+    border-right: 300px solid #003b58;
+    border-left: 300px solid #003b58;
   }
 }
 @keyframes round {
   0% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
     border-right: 300px solid transparent;
-    border-left: 300px solid #090F21;
+    border-left: 300px solid #003b58;
   }
   25% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
     border-right: 300px solid transparent;
     border-left: 300px solid transparent;
   }
   50% {
     border-top: 300px solid transparent;
     border-bottom: 300px solid transparent;
-    border-right: 300px solid #090F21;
-    border-left: 300px solid #090F21;
+    border-right: 300px solid #003b58;
+    border-left: 300px solid #003b58;
   }
   75% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
-    border-right: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
+    border-right: 300px solid #003b58;
     border-left: 300px solid transparent;
   }
   100% {
-    border-top: 300px solid #090F21;
-    border-bottom: 300px solid #090F21;
-    border-right: 300px solid #090F21;
-    border-left: 300px solid #090F21;
+    border-top: 300px solid #003b58;
+    border-bottom: 300px solid #003b58;
+    border-right: 300px solid #003b58;
+    border-left: 300px solid #003b58;
   }
 }
 body {
-  background: #090F21;
+  background: #003b58;
 }
 body section {
   height: 600px;
@@ -103,10 +103,10 @@ body section {
 body section #triangle {
   width: 0px;
   height: 0px;
-  border-top: 300px solid #090F21;
-  border-bottom: 300px solid #090F21;
+  border-top: 300px solid #003b58;
+  border-bottom: 300px solid #003b58;
   border-right: 300px solid transparent;
-  border-left: 300px solid #090F21;
+  border-left: 300px solid #003b58;
   position: absolute;
   top: 0px;
   left: 0px;
